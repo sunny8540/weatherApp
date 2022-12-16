@@ -308,11 +308,12 @@
 
  }
  .aboutMain{
-  width: 40rem;
+  width: 20rem;
   justify-content: center;
   text-align: justify;
  }
  .contact{
+  margin-left: -200px;
   display: grid ;
  }
  .images img{
