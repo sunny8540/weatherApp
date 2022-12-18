@@ -81,7 +81,9 @@ const Home = () => {
       <Link />
       <div className='home'>
    <div className='home1'>
-       <div className='con1'>
+       <div className='con1' style={{
+        marginLeft:"40px"
+       }}>
         <div className='country'>
         Country:{country}
         
@@ -97,10 +99,14 @@ const Home = () => {
        </div>
    <div className='homeSearch'>
        <div className='con2'>
-        <div className='icon'>
+        <div className='icon' style={{
+            marginLeft:"10px"
+        }}>
             <img src={icon} alt="weather condition" />
         </div>
-        <div className='text'>
+        <div className='text' style={{
+            marignLeft:"10px"
+        }}>
             {text}
         </div>
        </div>

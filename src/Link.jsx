@@ -13,7 +13,7 @@ function Link(){
                 // display:set?"none":"block"
             }}>
                  
-                <div className="left">
+                <div className="left" style={{paddingLeft:"10px"}}>
                   <a href="#">  Weather<span className="Info">Info</span></a>
                 </div>
                <div className="line" onClick={toggle}

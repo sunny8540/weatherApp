@@ -136,7 +136,7 @@
 
 }
 .con3{
-  padding: 3rem;
+  padding: 1rem;
   text-transform: capitalize;
 
   font-size: 20px;
@@ -149,14 +149,23 @@
 .con4{
   text-transform: capitalize;
   font-size: 20px;
-  padding:3rem;
+  padding:1rem;
 }
+
 .g{
   color:#db1d5c;
 }
 .con5{
-  padding: 3rem;
+  padding: 1rem;
   font-size: 20px;
+}
+.con3,.con4,.con5{
+  font-size: 18px;
+  margin: 1rem;
+  border: 1px solid #252525;
+  box-shadow: 0rem 0rem 10px #252525,
+  inset 0rem 0rem 20px #ccc;
+  border-radius: 10px;
 }
 .everyday{
   width: 100%;
