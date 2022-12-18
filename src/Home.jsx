@@ -35,7 +35,8 @@ const Home = () => {
     }
     async function show(){
         const res=await fetch(`
-        https://api.weatherapi.com/v1/current.json?key=5883fe5fd9274e7fae9105132221611&q=India&aqi=no
+        https://api.weatherapi.com/v1/forecast.json?key=c1701068363c433db8e122704221612&q=india&days=1&aqi=no&alerts=no
+
         `);
         const data=await res.json();
         // console.log(data.current);
@@ -64,7 +65,7 @@ const Home = () => {
         
     }
    async function everytime(){
-        let resp=await fetch('https://api.weatherapi.com/v1/forecast.json?key=5883fe5fd9274e7fae9105132221611&q=india&days=1&aqi=no&alerts=no');
+        let resp=await fetch('https://api.weatherapi.com/v1/forecast.json?key=c1701068363c433db8e122704221612&q=india&days=1&aqi=no&alerts=no');
         let datas=await resp.json();
         let dat=datas.forecast.forecastday[0].hour;
         setDat(dat);

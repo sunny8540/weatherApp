@@ -40,8 +40,10 @@ function Search(){
         setData(inputData);
     }
     async function show(){
-        const res=await fetch(`
-        https://api.weatherapi.com/v1/forecast.json?key=5883fe5fd9274e7fae9105132221611&q=${set}&days=1&aqi=no&alerts=no
+        // const res=await fetch(`
+        // https://api.weatherapi.com/v1/forecast.json?key=5883fe5fd9274e7fae9105132221611&q=${set}&days=1&aqi=no&alerts=no
+        // `);
+        const res=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=c1701068363c433db8e122704221612&q=${set}&days=1&aqi=no&alerts=no
         `);
         const data=await res.json();
          //use of  state
