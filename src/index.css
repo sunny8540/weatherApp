@@ -13,6 +13,7 @@
   display: inline;
   margin-right: 3rem;
   float: right;
+  list-style: none  ;
 }
 .active{
   color:  #db1d5c;
@@ -77,6 +78,7 @@
   display: flex;
 }
 .left{
+
   background-color: #ccc;
   font-size: 22px;
   line-height: 5rem;
@@ -291,22 +293,58 @@
 /* media query */
 
 
+.d{
+  width:1.5rem;
+  border-radius: 9999px;
 
+  height: 3px;
+  background-color: #252525;
+  margin-top: 0.3rem;
+}
+.o{
+  width:1.5rem;
+  border-radius: 9999px;
+
+  height: 3px;
+  background-color: #252525;
+  margin-top: 0.3rem;
+}
+.line{
+  position: absolute;
+  margin-top: 0.5remrem;
+  margin-left: 27rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+cursor: pointer;
+display: none;
+background-color: #ccc;
+}
 @media (max-width:768px){
+  .line{
+    display: block;
+  }
+  .link{
+    display: grid;
+  }
  .homeSearch{
   display: grid;
   /* justify-content: space-around; */
  } 
- .mainLink ul li{
-  margin-right: 1.5rem;
-   
-  direction: ltr;
+ .mainLink{
+  height: 5rem;
  }
- .link{
+ .mainLink ul li {
+  
+   /* margin-right: 1.5rem; */
+   display:grid;
+   /* direction: ltr; */
+ }
+ 
+ /* .link{
   display: grid;
 
 
- }
+ } */
  .aboutMain{
   margin-left: 3rem;
   width: 20rem;

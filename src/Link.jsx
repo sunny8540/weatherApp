@@ -1,15 +1,43 @@
 import React from "react";
 import './index.css';
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 function Link(){
+    const [set,setData]=useState(false);
+    function toggle(){
+        setData(current=>!current)
+    }
     return(
         <>
-            <div className="link">
+            <div className="link" style={{
+                // display:set?"none":"block"
+            }}>
                  
                 <div className="left">
                   <a href="#">  Weather<span className="Info">Info</span></a>
                 </div>
-               <div className="mainLink">
+               <div className="line" onClick={toggle}
+               style={{
+                marginTop:set?"0.6rem":""
+               }}>
+                <div className="d"
+                style={{transform:set?"rotate(45deg)":"",
+               }}></div>
+                <div className="d"
+                style={{
+                    display:set?"none":"block"
+                }}></div>
+                <div className="d"
+                style={{
+                    transform:set?"rotate(-45deg)":"",
+                    marginTop:set?"-3px":""
+                }}></div>
+               </div>
+                
+               <div className="mainLink"  
+               style={{
+                display:set?"block":"none"
+               }}>
                <ul>
                     <li> <NavLink to="/contact">Contact</NavLink></li>
                     <li> <NavLink to="/about">About</NavLink></li>
@@ -17,6 +45,7 @@ function Link(){
                     {/* <li> <NavLink to="/blog">Blog</NavLink></li> */}
                     <li> <NavLink to="/">Home</NavLink></li>           
                 </ul>
+               
                </div>
             </div>
     
