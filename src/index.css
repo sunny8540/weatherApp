@@ -11,7 +11,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  letter-spacing: 2px;
   display: inline;
-  margin-right: 3rem;
+  margin-right: 2rem;
   float: right;
   list-style: none  ;
 }
@@ -312,7 +312,7 @@
 .line{
   position: absolute;
   margin-top: 0.5remrem;
-  margin-left: 27rem;
+  margin-left: 22rem;
   padding-top: 1.5rem;
   padding-right: 1.5rem;
 cursor: pointer;
@@ -337,7 +337,7 @@ background-color: #ccc;
   
    /* margin-right: 1.5rem; */
    display:grid;
-   /* direction: ltr; */
+   direction: ltr;
  }
  
  /* .link{
