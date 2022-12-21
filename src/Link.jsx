@@ -21,24 +21,31 @@ function Link(){
                 marginTop:set?"0.6rem":""
                }}>
                 <div className="d"
-                style={{transform:set?"rotate(45deg)":"",
+                s
+                style={{transform:set?"":"rotate(-45deg)",
+                marginTop:set?"":""
+
                }}></div>
                 <div className="d"
                 style={{
-                    display:set?"none":"block"
+                    display:set?"block":"none",
+                  
                 }}></div>
                 <div className="d"
                 style={{
-                    transform:set?"rotate(-45deg)":"",
-                    marginTop:set?"-3px":""
+                    transform:set?"":"rotate(45deg)",
+                    marginTop:set?"":"4px"
+                    // ,transform:"rotate(45deg)",
+                    // marginTop:"-3px"
                 }}></div>
                </div>
                 
                <div className="mainLink"  
                style={{
-                display:set?"block":"none"
-               }}>
-               <ul>
+                display:set?"none":"block"
+               }}
+               >
+               <ul>   
                     <li> <NavLink to="/contact">Contact</NavLink></li>
                     <li> <NavLink to="/about">About</NavLink></li>
                     <li> <NavLink to="/search">Search</NavLink></li>

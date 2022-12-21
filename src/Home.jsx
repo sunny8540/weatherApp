@@ -110,7 +110,7 @@ const Home = () => {
             {text}
         </div>
        </div>
-       <div className='con3'>
+       <div className='con3' >
         <div className='c'>temperature in deg celsius:<span className='t'>{tempc}°c</span></div>
         <div className='f'>temperature in deg fahrenheit :<span className='t'>{tempf}°f</span></div>
         <div className='humidity'>Humidity:<span className='t'>{humidity}</span></div>

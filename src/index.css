@@ -377,3 +377,9 @@ background-color: #ccc;
  }
  
 }
+.so{
+  display: block;
+}
+.noso{
+  display: none;
+}
