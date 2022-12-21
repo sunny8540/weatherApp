@@ -18,7 +18,7 @@ function Link(){
                 </div>
                <div className="line" onClick={toggle}
                style={{
-                marginTop:set?"0.6rem":""
+                marginTop:set?"":""
                }}>
                 <div className="d"
                 s
